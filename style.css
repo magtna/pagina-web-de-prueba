@@ -1,0 +1,70 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+*{
+   font-family: 'Roboto', sans-serif;  
+   text-transform: uppercase;
+   text-align: start;   
+} 
+.bg-nav{
+    background-color: #3988f6;
+}
+.portada{
+    height: 60vh;
+    width: 100%;
+}
+.TwoCol{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.mapa{
+    width: 100%;
+    height: 70vh;
+}
+.nombre{
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 1%;
+    color: seashell;
+    width: 100%;
+    text-align: center;
+}
+img{
+    max-width: 100%;
+}
+.whatsapp{
+    font-size: 8vh;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    color: green;
+}
+.whatsapp a{
+    color: green;
+}
+
+.whatsapp :hover{
+    color: blue;
+}
+/* media para moviles*/
+@media screen  and (max-width: 800px) {
+ .portadas{
+     display: grid;
+     grid-template-columns: auto;
+ }
+ .whatsapp{
+    font-size: 8vh;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    color: green; }
+    .sticky-top{
+        display: static;
+        top: auto;
+    }
+    .TwoCol{
+        display: inline-block;
+    }
+
+}
+
+/* media para computadora */

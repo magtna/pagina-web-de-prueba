@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      sizes="32x32"
+      href="/Images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+    <title>Veterinaria Maxcot</title>
+  </head>
+  <body class="">
+    <!--     barra de navegacion     -->
+    <nav
+      class="
+        navbar navbar-expand-sm
+        bg-primary
+        navbar-dark
+        navegador
+        sticky-top
+      "
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="Images/logo-1.png" alt="Avatar Logo" style="width: 80px" />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#MenuNavegacion"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="MenuNavegacion" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link">inicio</a></li>
+            <li class="nav-item dropdown align-items-lg-end">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Servicios</a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Cirugias</a></li>
+                <li><a href="#" class="dropdown-item">desparacitacion</a></li>
+                <li><a href="#" class="dropdown-item">banos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                ><i class="bi bi-telephone"></i> Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--       fin de la barra de navegacion  -->
+    <div class="TwoCol">
+      <!-- Carousel -->
+      <div
+        id="carousel"
+        class="carousel slide portada port"
+        data-bs-ride="carousel"
+      >
+        <!-- indicadores -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <!-- imagenes carousel -->
+        <div class="carousel-inner portada">
+          <div class="carousel-item active">
+            <img
+              src="Images/257603122_5011173592235831_5611212417571318942_n.png"
+              alt="Los Angeles"
+              class="d-block img-fluid portada"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="Images/257797663_5011172972235893_5302982399614636677_n.png"
+              alt="Chicago"
+              class="d-block img-fluid portada"
+              style="width: 100%"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block img-fluid portada"
+              src="Images/258853859_5011173335569190_7320143725907966617_n.png"
+              alt="New York"
+              class="d-block"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <!-- Carousel final -->
+      <div>
+        <a href="#"><img class="portada" src="Images/Logo-1.png" alt="promocion recoleccion Limitada"></a>
+      </div>
+    </div>
+    <!--       comienza contenedor del cuerpo -->
+    <h1 class="nombre bg-primary bg-opacity-b">Veterinaria Maxcot Merida</h1>
+    <!--     comienza el apartadod de mapa y direcciones    -->
+    <section id="direcciones" class="TwoCol">
+      <iframe
+        class="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d739.1704866494355!2d-89.60648220303393!3d20.98517681380873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f567147f9c106d3%3A0x41847cd9f363bec!2sMaxcot%20Cl%C3%ADnica%20y%20Estetica%20Veterinaria!5e0!3m2!1ses-419!2smx!4v1638215032137!5m2!1ses-419!2smx"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+      <div class="bg-secondary">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis,
+          accusamus! Illo eveniet quibusdam expedita nobis autem eum nemo at,
+          quam quidem, ex nulla reprehenderit in nam similique rerum! Veniam,
+          repudiandae!
+        </p>
+        <p>
+          Neque ducimus iste odit molestiae! Delectus esse unde quaerat
+          perspiciatis culpa nisi itaque voluptatibus ad aspernatur maiores,
+          reprehenderit, quae fugiat amet nobis incidunt similique labore error
+          facilis tempore quo nulla!
+        </p>
+        <p>
+          Animi sit temporibus minima. Suscipit deserunt similique repellat
+          voluptatibus labore molestias delectus facilis? Ullam explicabo sit
+          non numquam fuga! Porro facere sunt tempora nulla consequuntur quia
+          eius voluptas molestiae blanditiis?
+        </p>
+        <p>
+          Non aliquam nemo accusamus eum repudiandae nostrum sed magni! Vero
+          aperiam, velit molestias perspiciatis voluptates pariatur
+          consequuntur, totam amet obcaecati possimus ratione ex maiores.
+          Laboriosam laudantium ex eligendi numquam! Illo!
+
+      </div>
+    </section>
+    <section id="servicios">
+      <h1>dsa</h1>
+    </section>
+
+    <!-- boton redes sociales staticos -->
+    <div class="whatsapp">
+      <a
+        href="whatsapp://send?text=Buenos dias, quisiera informacion de&phone=+52 999 602 0550&abid=+52 999 602 0550"
+        ><i class="bi bi-whatsapp"></i
+      ></a>
+      <!--       <a href="https://m.me/XYZ">Envíanos un mensaje de Facebook</a>-->
+    </div>
+    <!-- termina boton redes sociales -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

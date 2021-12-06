@@ -3,10 +3,15 @@
 *{
    font-family: 'Roboto', sans-serif;  
    text-transform: uppercase;
-   text-align: start;   
+   text-align: center;
 } 
+
+body{
+    background-color: #D8E6FC;
+
+}
 .bg-nav{
-    background-color: #3988f6;
+    background-color: rgba(57, 136, 246, .8) ;
 }
 .portada{
     height: 60vh;
@@ -16,9 +21,21 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
+.bg-morado{
+    background-color: rgb(148,130,254);
+    color: #FFFFFF;
+    border-radius: 20px;
+}
+.titulo-parrafo{
+    text-align: center;
+    font-size: 250%;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
 .mapa{
     width: 100%;
-    height: 70vh;
+    height: 60vh;
+    border-radius: 20px;
 }
 .nombre{
     font-size: 1.5rem;
@@ -28,18 +45,30 @@
     width: 100%;
     text-align: center;
 }
-img{
-    max-width: 100%;
+.principales-servicios{
+    list-style: none;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    margin: auto;
+    padding: 40px;
+}
+.principales-servicios li{
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+.principales-servicios li img{
+width: 1rem;
 }
 .whatsapp{
     font-size: 8vh;
     position: fixed;
     bottom: 20px;
     right: 50px;
-    color: green;
+    background-color: white;
 }
 .whatsapp a{
-    color: green;
+    color: yellowgreen;
 }
 
 .whatsapp :hover{
@@ -47,22 +76,34 @@ img{
 }
 /* media para moviles*/
 @media screen  and (max-width: 800px) {
+    .navbar{
+        text-align: start;
+    }
  .portadas{
      display: grid;
-     grid-template-columns: auto;
+     -ms-grid-columns: auto -ms-grid-columns;     
  }
+    .mapa{
+        width: 100%;
+        height: 50vh;
+    }
  .whatsapp{
     font-size: 8vh;
     position: fixed;
     bottom: 20px;
     right: 30px;
     color: green; }
-    .sticky-top{
-        display: static;
-        top: auto;
+    .principales-servicios{
+        list-style: none;
+        display: block;
+        margin: auto;
+        padding: 40px;
     }
     .TwoCol{
-        display: inline-block;
+        display: block;
+    }
+    .carousel{
+        display: none;
     }
 
 }

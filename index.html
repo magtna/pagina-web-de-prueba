@@ -21,19 +21,11 @@
     <style></style>
     <title>Veterinaria Maxcot</title>
   </head>
-  <body class="">
+  <body>
     <!--     barra de navegacion     -->
-    <nav
-      class="
-        navbar navbar-expand-sm
-        bg-primary
-        navbar-dark
-        navegador
-        sticky-top
-      "
-    >
+    <nav class="navbar navbar-expand-sm bg-nav navbar-dark sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#" target="_blank">
           <img src="Images/logo-1.png" alt="Avatar Logo" style="width: 80px" />
         </a>
         <button
@@ -44,7 +36,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div id="MenuNavegacion" class="collapse navbar-collapse">
+        <div
+          id="MenuNavegacion"
+          class="collapse navbar-collapse justify-content-end"
+        >
           <ul class="nav navbar-nav">
             <li class="nav-item"><a href="#" class="nav-link">inicio</a></li>
             <li class="nav-item dropdown align-items-lg-end">
@@ -62,146 +57,94 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link"
-                ><i class="bi bi-telephone"></i> Contacto</a
-              >
+              <a class="nav-link" href="#">promociones</a>
+            </li>
+            <li class="nav-item">
+              <a href="#direcciones" class="nav-link"> Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!--       fin de la barra de navegacion  -->
-    <div class="TwoCol">
-      <!-- Carousel -->
-      <div
-        id="carousel"
-        class="carousel slide portada port"
-        data-bs-ride="carousel"
-      >
-        <!-- indicadores -->
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carousel"
-            data-bs-slide-to="0"
-            class="active"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carousel"
-            data-bs-slide-to="1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carousel"
-            data-bs-slide-to="2"
-          ></button>
-        </div>
 
-        <!-- imagenes carousel -->
-        <div class="carousel-inner portada">
-          <div class="carousel-item active">
-            <img
-              src="Images/257603122_5011173592235831_5611212417571318942_n.png"
-              alt="Los Angeles"
-              class="d-block img-fluid portada"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="Images/257797663_5011172972235893_5302982399614636677_n.png"
-              alt="Chicago"
-              class="d-block img-fluid portada"
-              style="width: 100%"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block img-fluid portada"
-              src="Images/258853859_5011173335569190_7320143725907966617_n.png"
-              alt="New York"
-              class="d-block"
-              style="width: 100%"
-            />
-          </div>
+    <!-- portada de la pagina, foto de inicio -->
+    <div class="container">
+      <div class="">
+        <div>
+          <a href="#"
+            ><img class="portada" src="Images/Logo-1.png" alt="Imagen de logo"
+          /></a>
         </div>
-
-        <!-- Left and right controls/icons -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-        </button>
       </div>
-      <!-- Carousel final -->
+      <!--       comienza contenedor del cuerpo -->
+      <h1 class="nombre bg-primary bg-opacity-b">Veterinaria Maxcot Merida</h1>
+<!--       principales servicios
+ -->      <div>
+        <ul class="principales-servicios">
+
+          <li>
+            <img src="" alt="imagen2">
+            <h4>hospitalizacion</h4>
+            <p>nuestras instalaciones estan listas para el resguardo de sus mascotas, cuidadonlos durante su recuperacion</p>
+          </li>
+          <li>
+            <img src="" alt="imagen3">
+            <h4>Spa para mascotas</h4>
+            <p>Banos y limpieza, aliminacion de garrapatas</p>
+          </li>
+          <li>
+            <img src="" alt="imagen4">
+            <h4>Recoleccion</h4>
+            <p>para su mayor comodidad, le ofrecemos la recoleccion directamente a su domicilio <br>
+            <strong>*area limitada</strong></p>
+          </li>
+        </ul>
+      </div>
+
+      <!--     comienza el apartadod de mapa y direcciones    -->
+      <section id="direcciones" class="TwoCol">
+        <div class="bg-morado">
+          <p class="titulo-parrafo">Contacto</p>
+
+          <p>
+            <i class="bi bi-house"></i> Direccion <br />calle 45 x 23 #433
+            col.carranza
+          </p>
+          <p>
+            <a
+              href="whatsapp://send?text=Buenos dias, quisiera informacion de&phone=+52 999 602 0550&abid=+52 999 602 0550"
+              ><i class="bi bi-whatsapp"></i>999-602-0550</a
+            >
+          </p>
+        </div>
+        <iframe
+          class="mapa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d739.1704866494355!2d-89.60648220303393!3d20.98517681380873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f567147f9c106d3%3A0x41847cd9f363bec!2sMaxcot%20Cl%C3%ADnica%20y%20Estetica%20Veterinaria!5e0!3m2!1ses-419!2smx!4v1638215032137!5m2!1ses-419!2smx"
+          width="600"
+          height="450"
+          style="border: 0"
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <!-- boton redes sociales staticos -->
+<!--       <div class="whatsapp">
+        <a
+          href="whatsapp://send?text=Buenos dias, quisiera informacion de&phone=+52 999 602 0550&abid=+52 999 602 0550"
+          ><i class="bi bi-whatsapp"></i
+        ></a> -->
+        <!--       <a href="https://m.me/XYZ">Envíanos un mensaje de Facebook</a>-->
+      </div>
+      <!-- termina boton redes sociales -->
+    </div>
+    <footer class="card-footer bg-black text-white">
       <div>
-        <a href="#"><img class="portada" src="Images/Logo-1.png" alt="promocion recoleccion Limitada"></a>
+        <div>Contacto</div>
+        <div>Credito</div>
       </div>
-    </div>
-    <!--       comienza contenedor del cuerpo -->
-    <h1 class="nombre bg-primary bg-opacity-b">Veterinaria Maxcot Merida</h1>
-    <!--     comienza el apartadod de mapa y direcciones    -->
-    <section id="direcciones" class="TwoCol">
-      <iframe
-        class="mapa"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d739.1704866494355!2d-89.60648220303393!3d20.98517681380873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f567147f9c106d3%3A0x41847cd9f363bec!2sMaxcot%20Cl%C3%ADnica%20y%20Estetica%20Veterinaria!5e0!3m2!1ses-419!2smx!4v1638215032137!5m2!1ses-419!2smx"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
-      <div class="bg-secondary">
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis,
-          accusamus! Illo eveniet quibusdam expedita nobis autem eum nemo at,
-          quam quidem, ex nulla reprehenderit in nam similique rerum! Veniam,
-          repudiandae!
-        </p>
-        <p>
-          Neque ducimus iste odit molestiae! Delectus esse unde quaerat
-          perspiciatis culpa nisi itaque voluptatibus ad aspernatur maiores,
-          reprehenderit, quae fugiat amet nobis incidunt similique labore error
-          facilis tempore quo nulla!
-        </p>
-        <p>
-          Animi sit temporibus minima. Suscipit deserunt similique repellat
-          voluptatibus labore molestias delectus facilis? Ullam explicabo sit
-          non numquam fuga! Porro facere sunt tempora nulla consequuntur quia
-          eius voluptas molestiae blanditiis?
-        </p>
-        <p>
-          Non aliquam nemo accusamus eum repudiandae nostrum sed magni! Vero
-          aperiam, velit molestias perspiciatis voluptates pariatur
-          consequuntur, totam amet obcaecati possimus ratione ex maiores.
-          Laboriosam laudantium ex eligendi numquam! Illo!
 
-      </div>
-    </section>
-    <section id="servicios">
-      <h1>dsa</h1>
-    </section>
-
-    <!-- boton redes sociales staticos -->
-    <div class="whatsapp">
-      <a
-        href="whatsapp://send?text=Buenos dias, quisiera informacion de&phone=+52 999 602 0550&abid=+52 999 602 0550"
-        ><i class="bi bi-whatsapp"></i
-      ></a>
-      <!--       <a href="https://m.me/XYZ">Envíanos un mensaje de Facebook</a>-->
-    </div>
-    <!-- termina boton redes sociales -->
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

@@ -7,15 +7,23 @@
 } 
 
 body{
-    background-color: #D8E6FC;
-
+    background-color: white;
 }
 .bg-nav{
-    background-color: rgba(57, 136, 246, .8) ;
+    color: white;
+    background-color: rgba(57, 136, 246, .9) ;
+}
+.numeroTel{
+    text-align: start;
+    text-decoration: none;
+    color: white;
 }
 .portada{
-    height: 60vh;
+    display: block;
     width: 100%;
+    height: auto;
+    vertical-align: middle;
+    max-height: 50vw;
 }
 .TwoCol{
     display: grid;
@@ -34,7 +42,7 @@ body{
 }
 .mapa{
     width: 100%;
-    height: 60vh;
+    height: 30vmax;
     border-radius: 20px;
 }
 .nombre{
@@ -53,12 +61,12 @@ body{
     padding: 40px;
 }
 .principales-servicios li{
-    align-items: center;
+    text-align: center;
     margin: auto;
     padding: 20px;
 }
 .principales-servicios li img{
-width: 1rem;
+width: 5rem;
 }
 .whatsapp{
     font-size: 8vh;
@@ -79,10 +87,10 @@ width: 1rem;
     .navbar{
         text-align: start;
     }
- .portadas{
+/*  .portadas{
      display: grid;
      -ms-grid-columns: auto -ms-grid-columns;     
- }
+ } */
     .mapa{
         width: 100%;
         height: 50vh;
@@ -105,7 +113,24 @@ width: 1rem;
     .carousel{
         display: none;
     }
+    .mapa{
+        width: 100%;
+        height: 10rem;
+        border-radius: 20px;
+    }
 
 }
+@media screen and (min-width:1200px) {
+/*     
+    .portada{
+        width: 100%;
+        height: 40vh;
+    } */
+    .mapa{
+        width: 100%;
+        height: 30vh;
+        border-radius: 20px;
 
+    }
+}
 /* media para computadora */

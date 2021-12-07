@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+      content="clinica veterinaria ubicada en merida yucatan, 
+      ofreciendo servicios de cirugia, castracion o esterilizacion, 
+      baños con el servicio de recoleccion gratuito " />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,17 +22,19 @@
       type="image/x-icon"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" media="all"/>
     <style></style>
     <title>Veterinaria Maxcot</title>
   </head>
   <body>
     <!--     barra de navegacion     -->
-    <nav class="navbar navbar-expand-sm bg-nav navbar-dark sticky-top">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm bg-nav navbar-light sticky-top">
+      <div class="container-fluid ">
         <a class="navbar-brand" href="#" target="_blank">
           <img src="Images/logo-1.png" alt="Avatar Logo" style="width: 80px" />
         </a>
+        <a  class="numeroTel" href="#" target="_blank"><span><i class="bi bi-phone"></i> TEL.(999)1234567</span></a>
+        
         <button
           type="button"
           class="navbar-toggler"
@@ -69,11 +76,11 @@
     <!--       fin de la barra de navegacion  -->
 
     <!-- portada de la pagina, foto de inicio -->
-    <div class="container">
+    <div class="container-fluid">
       <div class="">
         <div>
           <a href="#"
-            ><img class="portada" src="Images/Logo-1.png" alt="Imagen de logo"
+            ><img class="portada" src="Images/gato.webp" alt="Imagen de logo"
           /></a>
         </div>
       </div>
@@ -84,18 +91,19 @@
         <ul class="principales-servicios">
 
           <li>
-            <img src="" alt="imagen2">
-            <h4>hospitalizacion</h4>
+            <img src="Images/veterinary.png" alt="imagen2">
+            <br>
+            <h2>hospitalizacion</h2>
             <p>nuestras instalaciones estan listas para el resguardo de sus mascotas, cuidadonlos durante su recuperacion</p>
           </li>
           <li>
-            <img src="" alt="imagen3">
-            <h4>Spa para mascotas</h4>
+            <img src="Images/bathing.png" alt="imagen3">
+            <h2>Spa para mascotas</h2>
             <p>Banos y limpieza, aliminacion de garrapatas</p>
           </li>
           <li>
-            <img src="" alt="imagen4">
-            <h4>Recoleccion</h4>
+            <img src="Images/ambulance.png" alt="imagen4">
+            <h2>Recoleccion</h2>
             <p>para su mayor comodidad, le ofrecemos la recoleccion directamente a su domicilio <br>
             <strong>*area limitada</strong></p>
           </li>
@@ -103,7 +111,7 @@
       </div>
 
       <!--     comienza el apartadod de mapa y direcciones    -->
-      <section id="direcciones" class="TwoCol">
+      <div id="direcciones" class="TwoCol bg-morado">
         <div class="bg-morado">
           <p class="titulo-parrafo">Contacto</p>
 
@@ -119,6 +127,7 @@
           </p>
         </div>
         <iframe
+          title="Mapa"
           class="mapa"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d739.1704866494355!2d-89.60648220303393!3d20.98517681380873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f567147f9c106d3%3A0x41847cd9f363bec!2sMaxcot%20Cl%C3%ADnica%20y%20Estetica%20Veterinaria!5e0!3m2!1ses-419!2smx!4v1638215032137!5m2!1ses-419!2smx"
           width="600"
@@ -126,7 +135,7 @@
           style="border: 0"
           loading="lazy"
         ></iframe>
-      </section>
+      </div>
 
       <!-- boton redes sociales staticos -->
 <!--       <div class="whatsapp">

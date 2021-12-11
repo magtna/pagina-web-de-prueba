@@ -10,20 +10,24 @@ body{
     background-color: white;
 }
 .bg-nav{
-    color: white;
-    background-color: rgba(57, 136, 246, .9) ;
+    display: absolute;
+    border-style: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+}
+.centrar{
+    display: grid;
+    place-items: center;
 }
 .numeroTel{
     text-align: start;
+    font-size: 1.25rem;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 .portada{
     display: block;
     width: 100%;
-    height: auto;
-    vertical-align: middle;
-    max-height: 50vw;
 }
 .TwoCol{
     display: grid;
@@ -64,24 +68,12 @@ body{
     text-align: center;
     margin: auto;
     padding: 20px;
+    
 }
 .principales-servicios li img{
 width: 5rem;
 }
-.whatsapp{
-    font-size: 8vh;
-    position: fixed;
-    bottom: 20px;
-    right: 50px;
-    background-color: white;
-}
-.whatsapp a{
-    color: yellowgreen;
-}
 
-.whatsapp :hover{
-    color: blue;
-}
 /* media para moviles*/
 @media screen  and (max-width: 800px) {
     .navbar{
@@ -133,4 +125,10 @@ width: 5rem;
 
     }
 }
+@media screen and (max-width:530px) {
+    .numeroTel{
+        display: none;
+    }
+
+    }
 /* media para computadora */
